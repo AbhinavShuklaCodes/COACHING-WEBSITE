@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #F1EEE8;
+}
+.nav{
+    
+    width: 100%;   
+    z-index: 2;
+    font-family: sans-serif;
+    top: 0;
+    /* border: 2px solid red; */
+    height: 5rem;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    backdrop-filter: blur(10px);
+    background-color: #F1EEE8;
+    /* border-radius: 2rem; */
+}
+
+
+.nav-menus{
+    display: flex;
+    gap: 2rem;
+}
+.nav h3{
+    color: rgb(14, 14, 14);
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-family:'Times New Roman', Times, serif;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #343434;
+}
+.nav button{
+    padding: .8rem;
+    border-radius: .8rem;
+    color: whitesmoke;
+    background-color:rgb(15, 15, 15) ;
+    border: none;
+}
+.nav li a:hover{
+    border-bottom:2px solid rgb(26, 26, 27) ;
+    color:#424242 ;
+}
+.nav button:hover{
+    background-color:rgb(66, 66, 66);
+
+}
+.hero-content{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    gap: 2rem;
+}
+.one{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    border: 2px solid red;
+}
+.one h3{
+    display: block;
+    font-size: 3rem;
+    /* text-align: left; */
+    /* border: 2px solid red; */
+}
+.one p{
+    display: block;
+    text-align: right;
+    color: rgb(51, 50, 50);
+    /* border: 2px solid red; */
+
+    text-align: left;
+}
+
+.two{
+    display: flex;
+    width: 80%;
+    padding: 2rem;
+    align-items: flex-start;
+    justify-content:center ;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 2rem;
+    border: 2px solid red;
+}
+.three{
+    border: 2px solid red;
+}
+/*
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+}
+header h2{
+    font-size: 2rem;
+}
+header i{
+    font-size: 1.5rem;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.line{
+    margin-top: .4rem;
+    border: 2px solid black;
+    width: 20%;
+} */
