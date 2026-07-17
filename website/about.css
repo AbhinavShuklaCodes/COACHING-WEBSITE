@@ -61,7 +61,6 @@ li a{
     background-color:rgb(66, 66, 66);
 
 }
-/* HERO SECTION */
 .hero-section{
     min-height: 100vh;
     width: 100%;
@@ -207,22 +206,426 @@ span{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.2rem;
+    margin: 1rem;
+}
+.img-cntr{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
+
+}
+
+.img-cntr img{
+    
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: inherit;
 }
 .one{
-    /* grid-row-start: 1; */
-    background-color: rgb(236, 109, 109);
+    background-color: #d7d7d5;
     grid-row:1/3 ;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.one i{
+    font-size: 2rem;
+    margin-top: 4rem;
+    color: rgb(123, 129, 85);
+}
+.one .heading{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: 4rem;
+}
+.one .one-desc{
+    margin-top: 3rem;
+    color: #4b4b4b;
+    font-size: 1.2rem;
 }
 .two{
     grid-row: 1/3 ;
     grid-column: 2/4;
-    background-color: aqua;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 2rem;
+}
+.two .text{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    padding: 2rem;
+    width: 550px;
+    color: rgb(245, 245, 245);
+    font-size: 3rem;
+    text-shadow:4px 4px 4px  #343434;
 }
 .three{
     grid-column: 1/3;
-    background-color: blue;
+    background-color: rgb(10, 10, 10);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    border-radius: 2rem;
+
 }
+.three h4{
+    font-size:3rem ;
+    
+}
+.three p{
+    font-size: 1.1rem;
+    line-height: 25px;
+    word-spacing: 3px;
+    margin-top: 2rem;
+}
+.three-btns{
+    margin-top: 3rem;
+    justify-content: space-between;
+
+    display: flex;
+
+}
+.grid-btn{
+    background-color: black;
+    font-size: 1.15rem;
+    color: whitesmoke;
+    outline: none;
+    padding: 16px;
+    border-radius: 2rem;
+    border:1px solid white ;
+    
+
+}
+
 .four{
     grid-column: 3/4;
-    background-color: aquamarine;
+    border-radius: 2rem;
+    color: rgb(93, 122, 33);
+    background-color: rgb(213, 213, 143);
+    padding: 6rem;
+}
+.four i{
+    font-size: 3rem;
+}
+.four h4{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+.four p{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    line-height: 1.6rem;
+    width: 400px;
+
+
+}
+
+.end-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ending-box{
+    margin-top: 6rem;
+    padding: 5rem  ;
+    width: 80%;
+    background-color:rgb(240, 227, 125) ;
+    border-radius: 2rem;
+    
+
+}
+.ending-box h2{
+    text-align: center;
+    font-size: 3rem;
+}
+.ending-box p{
+    text-align: center;
+    margin-top:3rem ;
+    font-size:1.3rem ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ending-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top:3rem ;
+
+}
+.ebtns{
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+}
+.endbtn-1{
+    color: whitesmoke;
+    background-color:rgb(15, 15, 15) ;
+}
+.endbtn-1:hover{
+    background-color: rgb(70, 69, 69);
+}
+.endbtn-2{
+    background-color:rgb(241, 231, 171) ;
+}
+.endbtn-2:hover{
+    background-color:rgb(243, 234, 186) ;
+}
+
+
+
+
+.footer-section{
+    margin-top: 4rem;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    padding: 4rem;
+}
+.footer-section h3{
+    text-align: center;
+    font-size: 1.3rem;
+    color:rgb(215, 239, 138);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.foot {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+
+}
+.foot li a{
+    color: rgb(166, 166, 166);
+    font-size: 1.09rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    
+
+    
+}
+.foot-icons{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.foot-ic{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-color: rgb(37, 37, 38);
+
+}
+.foot-ic:hover{
+    background-color:rgb(227, 227, 147) ;
+    color: black;
+    cursor: pointer;
+}
+.foot li a:hover{
+    color:whitesmoke ;
+}
+.legal-line{
+    margin-top: 3rem;
+    color: rgb(109, 109, 109);
+    text-align: center;
+    font-size: 1.09rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1023px){
+
+    
+    .nav{
+        padding:1.5rem 2rem;
+    }
+
+    .nav-menus{
+        gap:1rem;
+    }
+
+    .nav button{
+        display:none;
+    }
+
+    
+    .hero-section{
+        flex-direction:column;
+        gap:3rem;
+        padding:3rem 2rem;
+        text-align:center;
+    }
+
+    .left-section,
+    .right-section{
+        width:100%;
+    }
+
+    .left-section{
+        padding:0;
+        align-items:center;
+    }
+
+    .left-section h3{
+        width:100%;
+        font-size:2.6rem;
+    }
+
+    .desc{
+        width:80%;
+    }
+
+    .author{
+        justify-content:center;
+    }
+
+    .image-container{
+        position:relative;
+    }
+
+    .absolute-child{
+        width:180px;
+        height:auto;
+        right:20px;
+        bottom:20px;
+        top:auto;
+        padding:1rem;
+    }
+
+    
+
+    .philosophy-section .cntr-txt{
+        width:80%;
+    }
+
+    .grid-section{
+        grid-template-columns:1fr;
+        grid-template-rows:auto;
+        gap:1.5rem;
+        padding:2rem;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four{
+        grid-column:auto;
+        grid-row:auto;
+    }
+
+}
+@media (max-width:767px){
+
+
+    .nav{
+        padding:1rem;
+    }
+
+    .nav h3{
+        font-size:1.2rem;
+    }
+
+    .nav-menus{
+        display:none; /* Replace with hamburger later */
+    }
+
+    .nav button{
+        display:none;
+    }
+
+
+    .hero-section{
+        flex-direction:column;
+        padding:2rem 1rem;
+        gap:2rem;
+    }
+
+    .left-section,
+    .right-section{
+        width:100%;
+    }
+
+    .left-section{
+        padding:0;
+        align-items:center;
+        text-align:center;
+    }
+
+    .left-section h3{
+        width:100%;
+        font-size:2rem;
+    }
+
+    .desc{
+        width:100%;
+        font-size:.95rem;
+    }
+
+    .author{
+        justify-content:center;
+    }
+
+    .small-heading{
+        font-size:.75rem;
+    }
+
+    .image-container{
+        position:relative;
+        border-radius:1.5rem;
+    }
+
+    .absolute-child{
+        width:140px;
+        height:auto;
+        padding:.8rem;
+        right:10px;
+        bottom:10px;
+        top:auto;
+        font-size:.75rem;
+    }
+
+
+    .philosophy-section h2{
+        font-size:2rem;
+    }
+
+    .philosophy-section .cntr-txt{
+        width:100%;
+        font-size:1rem;
+    }
+
+    .grid-section{
+        grid-template-columns:1fr;
+        gap:1rem;
+        padding:1rem;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four{
+        grid-column:auto;
+        grid-row:auto;
+        padding:1.5rem;
+    }
+
 }

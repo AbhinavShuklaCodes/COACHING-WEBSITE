@@ -313,3 +313,114 @@ img{
     font-size: 1.09rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+@media (max-width: 992px){
+
+    .nav{
+        padding: 1.5rem;
+    }
+
+    .nav-menus{
+        gap: 1rem;
+    }
+
+    .nav button{
+        display: none;
+    }
+
+    .hero-section h2{
+        font-size: 2.4rem;
+        width: 90%;
+    }
+
+    .desc{
+        width: 90%;
+        font-size: 1.1rem;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .ending-box{
+        width: 90%;
+        padding: 3rem;
+    }
+
+    .ending-box h2{
+        font-size: 2.3rem;
+    }
+}
+@media (max-width:768px){
+
+    .nav{
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-menus{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero-section{
+        margin-top: 3rem;
+        padding: 0 1rem;
+    }
+
+    .hero-section h2{
+        font-size: 2rem;
+    }
+
+    .desc{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .card-container{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .cards{
+        padding: 1.5rem;
+    }
+
+    .img-container{
+        height: 200px;
+    }
+
+    .ending-box{
+        width: 95%;
+        padding: 2rem;
+    }
+
+    .ending-box h2{
+        font-size: 1.8rem;
+    }
+
+    .ending-box p{
+        font-size: 1rem;
+    }
+
+    .ending-btns{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .ebtns{
+        width: 100%;
+    }
+
+    .foot{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .foot-icons{
+        gap: 1rem;
+    }
+}
