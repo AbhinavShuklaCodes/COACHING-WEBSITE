@@ -64,6 +64,198 @@ li a{
 }
 .hero{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 2rem;
     align-items: center;
+    margin: 0 4rem;
+}
+.left-hero{
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.small-heading{
+    color: rgb(93, 122, 33);
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.left-hero .desc{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+}
+.text h2{
+    font-size: 4rem;
+}
+.line{
+    height: 2px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid rgb(231, 228, 228);
+}
+#one{
+    margin-bottom: 2rem;
+}
+.same{
+    display: flex;
+    gap: 2rem;
+}
+.info .same i{
+    color:rgb(83, 96, 44);
+    font-size: 1.5rem;
+}
+.desc-icon{
+    font-size: 1.2rem;
+    /* margin-top: 1rem; */
+    /* color:rgb(82, 97, 37); */
+}
+.box-comment{
+    background-color: rgb(227, 226, 226);
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    
+}
+.pfp{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.img-container{
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+.name{
+    margin-top: 8px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.thought{
+    font-size: 1.8rem;
+    font-style: italic;
+}
+.right-hero{
+    background-color: whitesmoke;
+    width: 50%;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 4px 4px rgb(165, 165, 165);
+}
+.right-hero form label{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.03rem;
+    gap: .4rem;
+}
+.right-hero form input{
+    margin-bottom: 2rem;
+    padding: .7rem;
+    border-radius: .7rem;
+
+    border: 1px solid gray;
+}
+.right-hero form textarea{
+    padding: 1rem;
+    height: 10rem;
+    border-radius: .7rem;
+}
+.right-hero form button{
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: .7rem;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+}
+.shr{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.res{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* FOOTER PART */
+
+
+.footer-section{
+    margin-top: 4rem;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    padding: 4rem;
+}
+.footer-section h3{
+    text-align: center;
+    font-size: 1.3rem;
+    color:rgb(215, 239, 138);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.foot {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+
+}
+.foot li a{
+    color: rgb(166, 166, 166);
+    font-size: 1.09rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    
+
+    
+}
+.foot-icons{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.foot-ic{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-color: rgb(37, 37, 38);
+
+}
+.foot-ic:hover{
+    background-color:rgb(227, 227, 147) ;
+    color: black;
+    cursor: pointer;
+}
+.foot li a:hover{
+    color:whitesmoke ;
+}
+.legal-line{
+    margin-top: 3rem;
+    color: rgb(109, 109, 109);
+    text-align: center;
+    font-size: 1.09rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

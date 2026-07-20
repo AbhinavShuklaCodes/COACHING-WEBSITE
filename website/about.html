@@ -19,7 +19,7 @@
                 <li><a href="signin.html">Login</a></li>
             </ul>
 
-            <button class="nav-btn">Book a Session</button>
+            <button id="bookBtn" class="nav-btn">Book a Session</button>
     </div>
     <div class="hero-section" id="about">
         <div class="left-section">
@@ -121,6 +121,11 @@
     <div class="timeline">
 
     </div>
-    
+    <script>
+        let button=document.querySelector("#bookBtn")
+        button.addEventListener('click',()=>{
+            window.location.href="book.html"
+        })
+    </script>
 </body>
 </html>

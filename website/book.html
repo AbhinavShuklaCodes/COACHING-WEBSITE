@@ -12,14 +12,14 @@
     <div class="nav">
             <h3>Rohan Kapoor</h3>
             <ul class="nav-menus">
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="index.html#testimonial">Testimonials</a></li>
                 <li><a href="signin.html">Login</a></li>
             </ul>
 
-            <button class="nav-btn">Book a Session</button>
+            <button class="nav-btn" id="backBtn">Back to home</button>
     </div>
     <div class="hero">
         <div class="left-hero">
@@ -27,53 +27,104 @@
 
                 <p class="small-heading">TAKE THE FIRST STEP</p>
                 <h2>Your evolution begins with a single conversation.</h2>
-                <p>Booking a discovery call is the most profound commitment you can make to your personal growth. In this focused session, we'll explore where you are, where you want to be, and how we can bridge that gap together.</p>
-
+                <p class="desc">Booking a discovery call is the most profound commitment you can make to your personal growth. In this focused session, we'll explore where you are, where you want to be, and how we can bridge that gap together.</p>
+            <div class="line"></div>
             </div>
             <div class="info">
                 <div id="one" class="same">
-                    <i class="fa-solid fa-shield"></i>
-                    <p>100% Confidentiality</p>
-                    <p>Your privacy and psychological safety are my highest priority.</p>
+                    <div class="icon">
+
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div class="desc-icon">
+
+                        <p><b>100% Confidentiality</b></p>
+                        <p>Your privacy and psychological safety are my highest priority.</p>
+                    </div>
                 </div>
                 <div id="two" class="same">
-                    <i class="fa-solid fa-clock"></i>
-                    <p>30-Minute Discovery</p>
-                    <p>A focused introductory session to align on you goals and timeline.</p>
+                    <div class="icon">
+
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="desc-icon">
+
+                        <p><b>30-Minute Discovery</b></p>
+                        <p>A focused introductory session to align on you goals and timeline.</p>
+                    </div>
 
                 </div>
                 <div class="box-comment">
-                    <p>"The clarity I gained from just one conversation with Rohan was more impactful than years of self-reflection."</p>
-                    <div class="img-container">
-                        <img src="" >
-                    </div>
-                    <div class="name">
-                        <p><b>Elena Rdriguez</b></p>
-                        <p>TECH EXECUTIVE</p>
+                    <p class="thought">"The clarity I gained from just one conversation with Rohan was more impactful than years of self-reflection."</p>
+                    <div class="pfp">
+
+                        <div class="img-container">
+                            <img src="pfp.png" >
+                        </div>
+                        <div class="name">
+                            <p><b>Elena Rdriguez</b></p>
+                            <p>TECH EXECUTIVE</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="right-hero">
-            <form action="submit" class="lead-form">
-                <p>Share your journey</p>
-                <label for="name">FULL NAME
-                    <input type="text" id="name">
+            <form class="lead-form">
+                <p class="shr">Share your journey</p>
+                <label for="name">
+                    FULL NAME
+                    <input type="text" id="name" placeholder="John Doe">
                 </label>
                 <label for="email">EMAIL ADDRESS
-                    <input type="email">
+                    <input type="email" id="email" placeholder="JohnDoe@gmail.com">
                 </label>
-                <label for="message">YOUR PROMARY goal 
-                    <textarea name="" id="message"></textarea>
+                <label for="phone">PHONE NUMBER
+                    <input type="number" id="phone" placeholder="+91 718XXXXXXX">
                 </label>
-                <button>REQUEST DISCOVERY CALL</button>
-                <p><i>Response time typically within 24 business hours</i></p>
+                <label for="message">YOUR PRIMARY GOAL
+                    <textarea name="" id="message" placeholder="Tell me briefly about the transition or breakthrough you're seeking...."></textarea>
+                </label>
+                <button>BOOK APPOINTMENT</button>
+                <p class="res"><i>Response time typically within 24 business hours</i></p>
 
             </form>
         </div>
     </div>
-    
 
+
+
+
+    <div class="footer-section">
+        <h3>ROHAN KAPOOR</h3>
+        <ul class="foot">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="foot-icons">
+            
+            <div class="foot-ic">
+
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="foot-ic">
+
+                <i class="fa-solid fa-at"></i>
+            </div>
+            <div class="foot-ic">
+
+                <i class="fa-regular fa-square-plus"></i>
+            </div>
+            
+
+        </div>
+        <p class="legal-line">© 2026 Rohan Kapoor. All rights reserved.</p>
+    </div>
+    </div>
+    
+    <script src="book.js"></script>
 
 </body>
 </html>

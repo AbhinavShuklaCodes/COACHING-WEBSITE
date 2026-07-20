@@ -20,7 +20,7 @@
                 <li><a href="signin.html">Login</a></li>
             </ul>
 
-            <button class="nav-btn">Book a Session</button>
+            <button id="bookBtn" class="nav-btn">Book a Session</button>
     </div>
     <div class="hero-section" id="home">
         <div class="left-section">
@@ -143,6 +143,13 @@
         </div>
         <p class="legal-line">© 2026 Rohan Kapoor. All rights reserved.</p>
     </div>
+
+    <script>
+        let button=document.querySelector("#bookBtn")
+        button.addEventListener('click',()=>{
+            window.location.href="book.html"
+        })
+    </script>
     
 </body>
 </html>
