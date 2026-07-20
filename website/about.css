@@ -259,7 +259,8 @@ span{
     bottom: 30px;
     left: 20px;
     padding: 2rem;
-    width: 550px;
+    width:90%;
+    max-width:550px;
     color: rgb(245, 245, 245);
     font-size: 3rem;
     text-shadow:4px 4px 4px  #343434;
@@ -443,7 +444,11 @@ span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
+.menu-icon{
+    display:none;
+    font-size:1.8rem;
+    cursor:pointer;
+}
 
 
 
@@ -533,24 +538,55 @@ span{
     }
 
 }
-@media (max-width:767px){
+@media (max-width:768px){
 
 
     .nav{
-        padding:1rem;
-    }
 
-    .nav h3{
-        font-size:1.2rem;
-    }
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:1rem;
 
-    .nav-menus{
-        display:none; /* Replace with hamburger later */
-    }
+}
 
-    .nav button{
-        display:none;
-    }
+.menu-icon{
+
+    display:block;
+
+}
+
+.nav-menus,
+.nav-btn{
+
+    display:none;
+    width:100%;
+
+}
+
+.nav-menus.active{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+    margin-top:1rem;
+    padding:1.5rem;
+
+    background:#F1EEE8;
+    border-radius:1rem;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.nav-btn.active{
+
+    display:block;
+    margin-top:1rem;
+    width:100%;
+
+}
 
 
     .hero-section{
@@ -627,5 +663,34 @@ span{
         grid-row:auto;
         padding:1.5rem;
     }
+    .three-btns{
 
+    flex-direction:column;
+    gap:1rem;
+
+}
+
+.grid-btn{
+
+    width:100%;
+
+}
+.footer-section{
+
+    padding:2rem 1rem;
+
+}
+
+.foot{
+
+    flex-direction:column;
+    gap:1rem;
+
+}
+
+.foot-icons{
+
+    gap:1rem;
+
+}
 }

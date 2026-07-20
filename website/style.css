@@ -408,30 +408,54 @@ img{
     font-size: 1.09rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.menu-icon{
+    display:none;
+    font-size:1.8rem;
+    cursor:pointer;
+}
 
 /* ==========================
    MOBILE
 ========================== */
 
 @media (max-width:768px){
+   .nav{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
 
-    .nav{
-        padding:1rem;
-        height:auto;
-        flex-direction:column;
-        gap:1rem;
-    }
+.menu-icon{
+    display:block;
+    font-size:1.8rem;
+}
 
-    .nav-menus{
-        flex-direction:column;
-        align-items:center;
-        gap:1rem;
-    }
+.nav-menus,
+.nav-btn{
+    display:none;
+    width:100%;
+}
 
-    .nav button{
-        width:100%;
-    }
+.nav-menus.active{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:1rem;
+    gap:1rem;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.5rem;
+
+    background: #F1EEE8;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.nav-btn.active{
+    display:block;
+    margin-top:1rem;
+}
 
     /* Hero */
 
@@ -541,6 +565,7 @@ img{
     }
 
 }
+
 /* ==========================
    TABLET
 ========================== */

@@ -12,6 +12,7 @@
 <body>
     <div class="nav">
             <h3>Rohan Kapoor</h3>
+            <i class="fa-solid fa-bars menu-icon"></i>
             <ul class="nav-menus">
                 <li><a href="#home">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -149,6 +150,14 @@
         button.addEventListener('click',()=>{
             window.location.href="book.html"
         })
+        const menuIcon = document.querySelector(".menu-icon");
+        const menu = document.querySelector(".nav-menus");
+        // const button = document.querySelector(".nav-btn");
+
+        menuIcon.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            button.classList.toggle("active");
+        });
     </script>
     
 </body>

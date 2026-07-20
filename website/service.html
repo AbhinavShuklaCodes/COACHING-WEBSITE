@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="nav">
+            <i class="fa-solid fa-bars menu-icon"></i>
             <h3>Rohan Kapoor</h3>
             <ul class="nav-menus">
                 <li><a href="index.html">Home</a></li>
@@ -126,7 +127,20 @@
         let button=document.querySelector("#bookBtn")
         button.addEventListener('click',()=>{
             window.location.href="book.html"
-        })
+        });
+        const menuIcon=document.querySelector(".menu-icon");
+
+        const menu=document.querySelector(".nav-menus");
+
+        const navButton=document.querySelector(".nav-btn");
+
+        menuIcon.addEventListener("click",()=>{
+
+        menu.classList.toggle("active");
+
+        navButton.classList.toggle("active");
+
+});
     </script>
     
 </body>

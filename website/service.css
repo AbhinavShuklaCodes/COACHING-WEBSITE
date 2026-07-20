@@ -313,6 +313,12 @@ img{
     font-size: 1.09rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.menu-icon{
+    display:none;
+    font-size:1.8rem;
+    cursor:pointer;
+}
+
 
 @media (max-width: 992px){
 
@@ -354,17 +360,51 @@ img{
 @media (max-width:768px){
 
     .nav{
-        flex-direction: column;
-        height: auto;
-        gap: 1rem;
-        padding: 1rem;
-    }
 
-    .nav-menus{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:1rem;
+
+}
+
+.menu-icon{
+
+    display:block;
+
+}
+
+.nav-menus,
+.nav-btn{
+
+    display:none;
+    width:100%;
+
+}
+
+.nav-menus.active{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+    margin-top:1rem;
+    padding:1.5rem;
+
+    background:#F1EEE8;
+    border-radius:1rem;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.nav-btn.active{
+
+    display:block;
+    margin-top:1rem;
+    width:100%;
+
+}
 
     .hero-section{
         margin-top: 3rem;
